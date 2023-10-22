@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,6 +9,9 @@ import { RegistroLibrosDeseadosComponent } from './components/registro-libros-de
 import { RegistroColeccionComponent } from './components/registro-coleccion/registro-coleccion.component';
 import { RegistroAutorComponent } from './components/registro-autor/registro-autor.component';
 import { MenuComponent } from './components/menu/menu.component';
+import { LoginComponent } from './components/login/login.component';
+import { InicioComponent } from './components/inicio/inicio.component';
+
 
 @NgModule({
   declarations: [
@@ -16,11 +20,15 @@ import { MenuComponent } from './components/menu/menu.component';
     RegistroLibrosDeseadosComponent,
     RegistroColeccionComponent,
     RegistroAutorComponent,
-    MenuComponent
+    MenuComponent,
+    LoginComponent,
+    InicioComponent
+  
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
