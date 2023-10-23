@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./registro-autor.component.css']
 })
 export class RegistroAutorComponent {
-
+  returnMenu(){alert("Redirigiendo al menu")}
 }

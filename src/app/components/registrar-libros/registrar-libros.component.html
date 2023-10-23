@@ -1,2 +1,40 @@
-<button class="btn btn-primary">Registrar Libros</button>
-<p>Descripción de la funcionalidad de Registrar Libros.</p>
+<div class="container-fluid bg-primary text-white text-center py-3">
+    <h1>Biblioteca UDB</h1>
+</div>
+<br>
+<form class="container">
+    <h1>Registro de Libros</h1>
+    <label for="titulo">Título:</label>
+    <input type="text" id="titulo" name="titulo" required><br><br>
+
+    <label for="autor">Autor:</label>
+    <input type="text" id="autor" name="autor" required><br><br>
+
+    <label for="categoria">Categoría:</label>
+    <input type="text" id="categoria" name="categoria" required><br><br>
+
+    <label for="precio">Precio:</label>
+    <input type="number" id="precio" name="precio" step="0.01" required><br><br>
+    <label for="portada">Portada:</label>
+    <input type="file" accept="image/*" id="portada" name="portada" (change)="handlePortada($event)"><br><br>
+
+    <input type="submit" value="Registrar Libro" (click)="confirm()">
+    <br>
+    <button (click)="returnMenu()">Volver al menu</button>
+</form>
+<!-- Agregamos el siguiente código para mostrar los libros -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-4 mb-4" *ngFor="let libro of libros">
+            <div class="card">
+                <img [src]="libro.portada" class="card-img-top" alt="Portada">
+                <div class="card-body">
+                    <h5 class="card-title">{{ libro.titulo }}</h5>
+                    <p class="card-text">{{ libro.autor }}</p>
+                    <p class="card-text">{{ libro.categoria }}</p>
+                    <p class="card-text">{{ libro.precio }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

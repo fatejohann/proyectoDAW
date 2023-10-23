@@ -1,3 +1,16 @@
+<div class="container-fluid bg-primary text-white text-center py-3">
+    <h1>Biblioteca UDB</h1>
+</div>
+<br>
+<form id="container">
+    <h1>Registro en colección</h1>
+    <label for="titulo">Título:</label>
+    <input type="text" id="titulo" name="titulo" required><br><br>
 
-<button class="btn btn-primary">Registrar coleccion</button>
-<p>Descripción de la funcionalidad de Registrar coleccion.</p>
+    <label for="genero">Género:</label>
+    <input type="text" id="genero" name="genero" required><br><br>
+
+    <input type="submit" value="Registrar Libro">
+    <br>
+    <button (click)="returnMenu()">Volver al menu</button>
+</form>

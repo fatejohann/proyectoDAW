@@ -1,0 +1,62 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item {
+    flex: 0 0 calc(33.33% - 10px);
+    margin-bottom: 20px;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.item img:hover {
+    transform: scale(1.05);
+}
+
+.about-us {
+    text-align: left;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.about-us h2 {
+    color: #333;
+}
+
+.bi-person {
+    margin-right: 8px;
+}
+
+footer {
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+footer a {
+    margin-right: 10px;
+}
+
+/* Estilos para el logo de Creative Commons */
+footer img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilos generales para mejorar la UX/UI */
+.cont {
+    margin-bottom: 30px;
+}
+
+button {
+    margin-right: 10px;
+}

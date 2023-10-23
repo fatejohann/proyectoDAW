@@ -1,3 +1,22 @@
+<div class="container-fluid bg-primary text-white text-center py-3">
+    <h1>Biblioteca UDB</h1>
+</div>
+<br>
+<form id="container">
+    <h1>Registro de Autor</h1>
+    <label for="titulo">Nombre:</label>
+    <input type="text" id="titulo" name="titulo" required><br><br>
 
-<button class="btn btn-primary">Registrar Autor</button>
-<p>Descripción de la funcionalidad de Registrar Autor.</p>
+    <label for="autor">Apellidos:</label>
+    <input type="text" id="autor" name="autor" required><br><br>
+
+    <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+    <input type="date" id="fechaNacimiento" name="fechaNacimiento" required><br><br>
+
+    <label for="bibliografia">Bibliografía:</label>
+    <textarea id="bibliografia" name="bibliografia" rows="4" cols="50"></textarea><br><br>
+
+    <input type="submit" value="Registrar">
+    <br>
+    <button (click)="returnMenu()">Volver al menu</button>
+</form>
