@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { FormsModule } from '@angular/forms';
+import {  ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -35,7 +36,8 @@ import { environment } from 'src/environments/environment';
     RouterModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
-    [BrowserModule, FormsModule],
+     FormsModule,
+     ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
