@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "proyectodaw-b3cbb": {
+      "hosting": {
+        "proyectoDAW": [
+          "proyectodaw-b3cbb"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "proyectodaw-b3cbb"
+  }
+}
