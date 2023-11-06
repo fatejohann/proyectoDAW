@@ -5,6 +5,9 @@ import { AngularFirestore } from '@angular/fire/compat/firestore';
   providedIn: 'root'
 })
 export class LibrosService {
+  obtenerLibrosDeseados() {
+    throw new Error('Method not implemented.');
+  }
 
   constructor(private firestore: AngularFirestore) {}
 
@@ -14,5 +17,10 @@ export class LibrosService {
 
   obtenerLibros() {
     return this.firestore.collection('libros').valueChanges();
+  }
+
+  
+  agregarLibroDeseado(libro: any) {
+    return this.firestore.collection('Deseados').add(libro);
   }
 }

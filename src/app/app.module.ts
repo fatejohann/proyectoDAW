@@ -35,7 +35,7 @@ import { environment } from 'src/environments/environment';
     RouterModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
-    FormsModule
+    [BrowserModule, FormsModule],
   ],
   providers: [],
   bootstrap: [AppComponent]
