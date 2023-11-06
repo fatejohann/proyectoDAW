@@ -37,13 +37,8 @@ import { getAuth, provideAuth } from '@angular/fire/auth';
     RouterModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
-<<<<<<< HEAD
     FormsModule,
-    provideFirebaseApp(() => initializeApp({"projectId":"proyectodaw-b3cbb","appId":"1:442942467897:web:99ef7b75bbc4194dff02e8","storageBucket":"proyectodaw-b3cbb.appspot.com","apiKey":"AIzaSyD4ACtEfzRhkfHN2chIvtgece5KGscW78k","authDomain":"proyectodaw-b3cbb.firebaseapp.com","messagingSenderId":"442942467897","measurementId":"G-T3KSVM4TMR"})),
-    provideAuth(() => getAuth())
-=======
-    [BrowserModule, FormsModule],
->>>>>>> 4a5f6b8f98d8613a9e5c7e362f855bade30b25e6
+    provideFirebaseApp(() => initializeApp({"projectId":"proyectodaw-b3cbb","appId":"1:442942467897:web:99ef7b75bbc4194dff02e8","storageBucket":"proyectodaw-b3cbb.appspot.com","apiKey":"AIzaSyD4ACtEfzRhkfHN2chIvtgece5KGscW78k","authDomain":"proyectodaw-b3cbb.firebaseapp.com","messagingSenderId":"442942467897","measurementId":"G-T3KSVM4TMR"})),provideAuth(() => getAuth())
   ],
   providers: [],
   bootstrap: [AppComponent]
