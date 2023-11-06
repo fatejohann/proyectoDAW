@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AutoresService } from '../../services/autores.service'; // Importa el servicio de autores
+import { AutoresService } from '../../services/autores.service'; 
 import { Router } from '@angular/router';
 
 @Component({

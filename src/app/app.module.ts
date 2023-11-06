@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { FormsModule } from '@angular/forms';
+import {  ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -37,6 +38,8 @@ import { getAuth, provideAuth } from '@angular/fire/auth';
     RouterModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
+     FormsModule,
+     ReactiveFormsModule,
     FormsModule,
     provideFirebaseApp(() => initializeApp({"projectId":"proyectodaw-b3cbb","appId":"1:442942467897:web:99ef7b75bbc4194dff02e8","storageBucket":"proyectodaw-b3cbb.appspot.com","apiKey":"AIzaSyD4ACtEfzRhkfHN2chIvtgece5KGscW78k","authDomain":"proyectodaw-b3cbb.firebaseapp.com","messagingSenderId":"442942467897","measurementId":"G-T3KSVM4TMR"})),provideAuth(() => getAuth())
   ],
