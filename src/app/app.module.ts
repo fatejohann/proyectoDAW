@@ -16,6 +16,8 @@ import { MenuComponent } from './components/menu/menu.component';
 import { LoginComponent } from './components/login/login.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { environment } from 'src/environments/environment';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { getAuth, provideAuth } from '@angular/fire/auth';
 
 
 @NgModule({
@@ -38,6 +40,8 @@ import { environment } from 'src/environments/environment';
     AngularFirestoreModule,
      FormsModule,
      ReactiveFormsModule,
+    FormsModule,
+    provideFirebaseApp(() => initializeApp({"projectId":"proyectodaw-b3cbb","appId":"1:442942467897:web:99ef7b75bbc4194dff02e8","storageBucket":"proyectodaw-b3cbb.appspot.com","apiKey":"AIzaSyD4ACtEfzRhkfHN2chIvtgece5KGscW78k","authDomain":"proyectodaw-b3cbb.firebaseapp.com","messagingSenderId":"442942467897","measurementId":"G-T3KSVM4TMR"})),provideAuth(() => getAuth())
   ],
   providers: [],
   bootstrap: [AppComponent]

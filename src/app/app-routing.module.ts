@@ -6,6 +6,7 @@ import { RegistroColeccionComponent } from './components/registro-coleccion/regi
 import { RegistroLibrosDeseadosComponent } from './components/registro-libros-deseados/registro-libros-deseados.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { InicioComponent } from './components/inicio/inicio.component';
+import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
   {path: 'menu',component: MenuComponent},
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'registro-libros-deseados', component: RegistroLibrosDeseadosComponent },
   { path: 'registro-coleccion', component: RegistroColeccionComponent },
   { path: 'registro-autor', component: RegistroAutorComponent },
+  { path: 'login', component: LoginComponent },
 
 ];
 
