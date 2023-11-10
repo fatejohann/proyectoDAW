@@ -29,6 +29,9 @@ Con esto nuestro proyecto ya estaria listo para correr.
 4. Compilar nuestro proyecto.
 Lo que debemos hacer para poder ver funcional nuestro proyecto es ejecutar el comando "ng serve" o tambien podemos utlizar "npm start".
 
+LINK A VIDEO DE FUNCIONAMIENTO:
+https://youtu.be/h1SxoSDR7ds
+
 LINK A MANUAL TECNICO:
 https://github.com/fatejohann/proyectoDAW/blob/master/Manual-tecnico.pdf
 
